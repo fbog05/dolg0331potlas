@@ -8,12 +8,8 @@
 */
 
 const doc = {
-    aOldal: document.querySelector('#aOldal'),
-    bOldal: document.querySelector('#bOldal'),
-    cOldal: document.querySelector('#cOldal'),
-    calcButton: document.querySelector('#calcButton'),
-    volume: document.querySelector('#volume')
-};
+    calcButton: document.querySelector('#calcButton')
+}
 
 window.addEventListener('load', () => {
     init();
@@ -25,7 +21,16 @@ function init(){
     });
 };
 
-function calculate(aOldal, bOldal, cOldal){
-        console.log(
-            (aOldal * bOldal * cOldal) + "m2");
+function calculate(){
+    let aOldal = document.getElementById('aOldal').value;
+    let bOldal = document.getElementById('bOldal').value;
+    let cOldal = document.getElementById('cOldal').value;
+    let volume;
+
+    volume = (aOldal * bOldal * cOldal);
+
+    console.log(volume);
+    document.getElementById('output').textContent = volume + " m3";
+    return false;
+
 };

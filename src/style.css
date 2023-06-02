@@ -6,3 +6,23 @@
     * Github: https://github.com/fbog05
     * Licenc: GNU GPL
 */
+
+body{
+    background-color: rgba(163, 229, 255, 0.89);
+}
+
+h1{
+    color:rgb(0, 0, 90);
+}
+
+h4{
+    color: rgb(0, 0, 90);
+}
+
+.about{
+    color: rgb(0, 0, 90);
+    font-weight: bold;
+    background-color: rgba(168, 255, 255, 0.568);
+    margin-left: 750px;
+    margin-right: 825px;
+}
